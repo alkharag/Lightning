@@ -7,13 +7,13 @@ int i = 0;
 void setup()
 {
 	background(0,0,0);
-	stroke(0, 150 +i*5, 240 -i*2);	
-	strokeWeight(1);
 	size(500,500);
+	
 	frameRate(250);
 }
 void draw()
 {
+	stroke(0, 150 +i*5, 240 -i*2);	
 	strokeWeight(3);
 	while (endY < 500) {
 		endX = startX + (int)(Math.random()*18-9);
@@ -38,14 +38,4 @@ void draw()
 	
 
 }
-/*void mousePressed()
-{
-	
-	startX = 0;
-	startY = 0;
-	endX = 0;
-	endY = 0;
-	
-	
-}*/
 
